@@ -1,3 +1,4 @@
 import './test'
+import './scss/index.scss'
 
-console.log('Good luck ;)')
+console.log('Good luck!!!')
