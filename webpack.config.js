@@ -7,7 +7,7 @@ const CopyPlugin = require('copy-webpack-plugin')
 const isProd = process.env.NODE_ENV === 'production'
 const isDev = !isProd
 
-const fileName = (ext) => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`
+const fileName = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
